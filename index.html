@@ -130,17 +130,20 @@
                 "An appeaser is one who feeds a crocodile, hoping it will eat him last. - Winston Churchill",
                 "Whoever said the pen is mightier than the sword obviously never encountered automatic weapons. - Douglas MacArthur", 
                 "Either I will be decorated or I will be court martialled. Fire! - Birger Eriksen",
+                "It's not really hard to fire guns, but it's immensely hard to make the decision to fire. - Birger Eriksen",
                 "In waking a tiger, use a long stick. - Mao Zedong",
+                "we will gain the inevitable triumph - so help us God. - Franklin D. Roosevelt",
                 "If everybody is thinking alike, then somebody isn't thinking. - George S. Patton",
                 "We could do with some of those razor blades, Herr Reichsmarschall. - Erwin Rommel, after Göring claimed the Americans only know how to make razor blades",
                 "I cannot forecast to you the action of Russia. It is a riddle wrapped in a mystery inside an enigma. - Winston Churchill",
                 "However beautiful the strategy, you should occasionally look at the results. - Winston Churchill",
                 "Since the Italian-Greek war, one does not say 'the Greeks are fighting like heroes', but 'the heroes are fighting like Greeks'. - The Montreal Daily Star, 1942",
                 "Patriotism is when love for your people comes first. Nationalism is when hate for other people than your own comes first. - Charles de Gaulle",
+                "France has lost a battle. But France has not lost the war. - Charles de Gaulle",
                 "It must be a peace without victory. Victory would mean peace forced upon the loser, a victor's terms imposed upon the vanquished. It would be accepted in humiliation and leave resentment. - Woodrow Wilson, 1917",
                 "If you want total security, go to prison. There you're fed, clothed, given medical care and so on. The only thing lacking is freedom. - Dwight D. Eisenhower",
                 "An army is a team. It lives, eats, sleeps, and fights as a team. This individual hero stuff is bullshit. - George S. Patton",
-                "Never tell people how to do things. Tell them what to do, and they will surprise you with their ingenuity. - George S. Patton",
+                "Never tell people how to do things. Tell them what to do, and they will surprise you wiherth their ingenuity. - George S. Patton",
                 "All men are frightened. The more intelligent they are, the more they are frightened. - George S. Patton",
                 "Human kindness has never weakened the stamina or softened the fiber of a free people. A nation does not have to be cruel in order to be tough. - Franklin D. Roosevelt",
                 "A sincere diplomat is like dry water or wooden iron. - Joseph Stalin",
@@ -189,6 +192,117 @@
         </div>
         <div id="system-weather" class="m-right text-lg font-bold text-carnation-500">
         </div>
+        <div>
+            <script>
+                // Array of target dates
+                var targetDates = [
+                    new Date('Mar 1, 2024 17:00:00'),
+                    new Date('Mar 2, 2024 16:00:00'),
+                    new Date('Mar 8, 2024 18:00:00'),
+                    new Date('Mar 9, 2024 18:00:00'),
+                    new Date('Mar 23, 2024 06:00:00'),
+                    new Date('Mar 24, 2024 05:00:00'),
+                    new Date('Apr 6, 2024 07:00:00'),
+                    new Date('Apr 7, 2024 06:00:00'),
+                    new Date('Apr 19, 2024 08:30:00'),
+                    new Date('Apr 20, 2024 04:00:00'),
+                    new Date('Apr 20, 2024 08:00:00'),
+                    new Date('Apr 21, 2024 08:00:00'),
+                    new Date('May 3, 2024 21:30:00'),
+                    new Date('May 4, 2024 17:00:00'),
+                    new Date('May 4, 2024 21:00:00'),
+                    new Date('May 5, 2024 21:00:00'),
+                    new Date('May 18, 2024 15:00:00'),
+                    new Date('May 19, 2024 14:00:00'),
+                    new Date('May 25, 2024 15:00:00'),
+                    new Date('May 26, 2024 14:00:00'),
+                    new Date('Jun 8, 2024 21:00:00'),
+                    new Date('Jun 9, 2024 19:00:00'),
+                    new Date('Jun 22, 2024 15:00:00'),
+                    new Date('Jun 23, 2024 14:00:00'),
+                    new Date('Jun 28, 2024 15:30:00'),
+                    new Date('Jun 29, 2024 11:00:00'),
+                    new Date('Jun 29, 2024 15:00:00'),
+                    new Date('Jun 30, 2024 14:00:00'),
+                    new Date('Jul 6, 2024 15:00:00'),
+                    new Date('Jul 7, 2024 15:00:00'),
+                    new Date('Jul 20, 2024 15:00:00'),
+                    new Date('Jul 21, 2024 14:00:00'),
+                    new Date('Jul 27, 2024 15:00:00'),
+                    new Date('Jul 28, 2024 14:00:00'),
+                    new Date('Aug 24, 2024 14:00:00'),
+                    new Date('Aug 25, 2024 14:00:00'),
+                    new Date('Aug 31, 2024 15:00:00'),
+                    new Date('Sep 1, 2024 14:00:00'),
+                    new Date('Sep 14, 2024 13:00:00'),
+                    new Date('Sep 15, 2024 12:00:00'),
+                    new Date('Sep 21, 2024 14:00:00'),
+                    new Date('Sep 22, 2024 13:00:00'),
+                    new Date('Oct 18, 2024 22:30:00'),
+                    new Date('Oct 19, 2024 19:00:00'),
+                    new Date('Oct 19, 2024 23:00:00'),
+                    new Date('Oct 20, 2024 20:00:00'),
+                    new Date('Oct 26, 2024 22:00:00'),
+                    new Date('Oct 27, 2024 21:00:00'),
+                    new Date('Nov 1, 2024 19:30:00'),
+                    new Date('Nov 2, 2024 15:00:00'),
+                    new Date('Nov 2, 2024 19:00:00'),
+                    new Date('Nov 3, 2024 18:00:00'),
+                    new Date('Nov 23, 2024 07:00:00'),
+                    new Date('Nov 24, 2024 07:00:00'),
+                    new Date('Nov 29, 2024 18:30:00'),
+                    new Date('Nov 30, 2024 14:00:00'),
+                    new Date('Nov 30, 2024 18:00:00'),
+                    new Date('Dec 1, 2024 18:00:00'),
+                    new Date('Dec 7, 2024 15:00:00'),
+                    new Date('Dec 8, 2024 14:00:00')
+                ];
+            
+            
+                // Function to calculate time remaining
+                function getTimeRemaining(endtime) {
+                    var totalSeconds = Math.floor((Date.parse(endtime) - Date.parse(new Date())) / 1000);
+                    var days = Math.floor(totalSeconds / (60 * 60 * 24));
+                    var hours = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
+                    var minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+                    var seconds = totalSeconds % 60;
+                    return {
+                        days,
+                        hours,
+                        minutes,
+                        seconds
+                    };
+                }
+            
+                // Function to update the countdown
+                function updateCountdown() {
+                    var futureDates = targetDates.filter(date => date - new Date() > 0); // Filter out past dates
+                    if (futureDates.length === 0) {
+                        document.getElementById('countdown').innerHTML = "No upcoming dates";
+                        return;
+                    }
+                    var nearestTime = futureDates[0];
+                    futureDates.forEach(date => {
+                        if (date - new Date() < nearestTime - new Date()) {
+                            nearestTime = date;
+                        }
+                    });
+                    var timeRemaining = getTimeRemaining(nearestTime);
+                    document.getElementById('countdown').innerHTML = timeRemaining.days + ':' +
+                                                                     ('0' + timeRemaining.hours).slice(-2) + ':' +
+                                                                     ('0' + timeRemaining.minutes).slice(-2) + ':' +
+                                                                     ('0' + timeRemaining.seconds).slice(-2);
+                }
+            
+                // Update countdown every second
+                setInterval(updateCountdown, 1000);
+            
+                // Initial call to update countdown
+                updateCountdown();
+            </script>
+                <div id="countdown" class="mx-4 text-lg font-bold"></div>  
+        </div>
+
     </div>
 
 
