@@ -56,7 +56,7 @@ const linkConfig = [
         links: [
             {
                 showAs: "rarbg",
-                link: "https://www.thrarbg.com"
+                link: "https://www.therarbg.com"
             },
             {
                 showAs: "megathread",
@@ -64,7 +64,7 @@ const linkConfig = [
             },
             {
                 showAs: "bitsearch",
-                link: "https://torrentgalaxy.to"
+                link: "https://bitsearch.to"
             },
             {
                 showAs: "rarbg index",
