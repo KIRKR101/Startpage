@@ -1,3 +1,3 @@
 Basic Startpage
 
-![Visual](https://github.com/KIRKR101/Startpage/assets/104659112/8b618e02-619c-404f-805c-dffa95b2acb6)
+![Visual](https://github.com/KIRKR101/Startpage/assets/104659112/f7001aee-d51d-4b5b-a862-b2015480227c)
