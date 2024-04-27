@@ -10,14 +10,36 @@
     <link rel="stylesheet" href="main.css" />
 </head>
 
+<style>
+    /* Style for the smaller container */
+    .container-small {
+        font-size: 1.2rem;
+        width: 50%;
+        height: 50px;
+        position: absolute;
+        top: 35.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+</style>
+
 <body>
+
     <div class="absolute -z-10 flex-1 overflow-hidden h-screen w-screen">
         <img class="min-h-full min-w-full filter blur-md" src="./arty.jpg" />
+    </div>
 
+    <div class="rounded-corner container-small align-middle m-auto bg-gallery-950 border-gallery-950 border-solid">
+        <div id="system-weather" class="align-middle font-bold text-carnation-550 text-2xl">
+        </div>
     </div>
 
     <div class="flex h-screen">
-        <div class="align-middle m-auto bg-gallery-950 w-5/6 p-6 border-2 border-gallery-950 border-solid">
+        <div class="rounded-corner align-middle m-auto bg-gallery-950 w-5/6 p-6 border-2 border-gallery-950 border-solid">
             <p class="font-bold text-gallery-500">
                 Theo@internet: ~/startpage$ <span class="text-gallery-50 font-normal">nexus --options</span>
             </p>
@@ -320,7 +342,6 @@
         </div>
 
     </div>
-
 
     <script src="linkConfig.js"></script>
     <script src="main.js"></script>

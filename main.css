@@ -58,3 +58,7 @@ body {
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
+
+.rounded-corner {
+    border-radius: 4px; /* Adjust the border radius as needed */
+}
