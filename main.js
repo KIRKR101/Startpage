@@ -1,5 +1,3 @@
-
-
 function stringTwoDigit(input) {
     if (input.toString().length < 2) {
         return "0" + input.toString();
@@ -111,7 +109,6 @@ function registerUserKeypress(event) {
     }
 
 }
-
 
 function initialize() {
     statusBarSetClock();

@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="main.css" />
 </head>
 
+<script>
+    document.addEventListener('keydown', function(event) {
+      // Check if right Ctrl key (code 17) is pressed
+      if (event.code === 'ControlRight') {
+        // Prompt the user to enter something
+        var userInput = prompt('Enter your search query:');
+        
+        // Perform search if user input is not empty
+        if (userInput !== null && userInput.trim() !== '') {
+          // You can customize this line to perform a search with the user input
+          const searchUrl = "https://google.com/search?q=";
+          window.open(searchUrl + userInput);
+        }
+      }
+    });
+</script>
+
 <style>
     /* Style for the smaller container */
     .container-small {
