@@ -10,17 +10,17 @@
     }
 
     50% {
-        background-color: var(--gallery-50);
+        background-color: var(--textcolour);
     }
 
     90% {
-        background-color: var(--gallery-50);
+        background-color: var(--textcolour);
     }
 }
 
 * {
-    --gallery-50: #f8f8f8;
-    --gallery-70: #646464;
+    --textcolour: #f8f8f8;
+    --hovercolour: #646464;
     --gallery-100: #eeeeee;
     --gallery-200: #e4e4e4;
     --gallery-300: #d1d1d1;
@@ -43,12 +43,10 @@
     --carnation-800: #9d2417;
     --carnation-900: #82241a;
     --carnation-950: #470e08;
-
-
 }
 
 body {
-    color: var(--gallery-50);
+    color: var(--textcolour);
     background-color: var(--gallery-900);
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 300;
@@ -65,5 +63,5 @@ body {
 }
 
 a:hover {
-    color: var(--gallery-70);
+    color: var(--hovercolour);
   }
