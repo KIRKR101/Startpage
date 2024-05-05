@@ -72,34 +72,31 @@ function registerUserKeypress(event) {
         linkConfig.forEach(option => {
             option.links.forEach(link => {
                 if (link.showAs.match(re) != null && link.showAs != commandLineDisplay.textContent && keepGoing) {
-
                     commandLineDisplay.textContent = link.showAs;
                     keepGoing = false;
-
-
                 }
-            })
-
-        })
-
+            });
+        });
     }
 
     else if (key == 13) {
         const commandLineDisplay = document.querySelector("#user-command-line-input");
         event.preventDefault();
-
-        let keepGoing = true;
+        let foundLink = false;
         linkConfig.forEach(option => {
             option.links.forEach(link => {
-                if (link.showAs == commandLineDisplay.textContent && keepGoing) {
+                if (link.showAs == commandLineDisplay.textContent) {
                     window.open(link.link, "_blank");
-                    commandLineDisplay.textContent = "";
-                    userCommandLineInput = "";
-                    keepGoing = false;
+                    foundLink = true;
                 }
-            })
-
-        })
+            });
+        });
+        if (!foundLink) {
+            let searchQuery = encodeURIComponent(commandLineDisplay.textContent);
+            window.open("https://www.google.com/search?q=" + searchQuery, "_blank");
+        }
+        commandLineDisplay.textContent = "";
+        userCommandLineInput = "";
     }
 
     else if (event.key.toString().length < 2) {
@@ -107,8 +104,8 @@ function registerUserKeypress(event) {
         const commandLineDisplay = document.querySelector("#user-command-line-input");
         commandLineDisplay.textContent = userCommandLineInput;
     }
-
 }
+
 
 function initialize() {
     statusBarSetClock();
