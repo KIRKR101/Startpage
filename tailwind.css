@@ -660,7 +660,7 @@ video {
   color: rgb(140 147 168 / var(--tw-text-opacity));
 }
 
-.text-carnation-550 {
+.text-weather {
   --tw-text-opacity: 1;
   color: rgb(140 147 168 / var(--tw-text-opacity));
 }
@@ -675,7 +675,7 @@ video {
   color: rgb(83 96 109 / var(--tw-text-opacity));
 }
 
-.text-gallery-500 {
+.text-quote {
   --tw-text-opacity: 1;
   color: rgb(115 134 149 / var(--tw-text-opacity));
 }
@@ -685,13 +685,14 @@ video {
   color: rgb(83 96 109 / var(--tw-text-opacity));
 }
 
-.text-shamrock-500 {
+/*heading colour*/
+.text-shamrock-500 { 
   --tw-text-opacity: 1;
   color: rgb(153 169 188 / var(--tw-text-opacity));
 }
 
 .blur-md {
-  --tw-blur: blur(3px);
+  --tw-blur: blur(2px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
