@@ -92,6 +92,14 @@ const linkConfig = [
                 showAs: "drive",
                 link: "https://drive.google.com"
             },
+            {
+                showAs: "Chat-GPT",
+                link: "https://chatgpt.com/"
+            },
+            {
+                showAs: "Claude",
+                link: "https://claude.ai/"
+            },
 
         ],
     },
